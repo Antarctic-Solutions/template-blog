@@ -17,6 +17,42 @@ Facing issues? Check the [FAQ page](https://github.com/timlrx/tailwind-nextjs-st
 
 Feature request? Check the past discussions to see if it has been brought up previously. Otherwise, feel free to start a new discussion thread. All ideas are welcomed!
 
+## Modifications
+
+Now renders the blog page differently and with reading minutes. Also changed up the style to index page and removed a bunch of stuff I don't need.
+
+Some of the changes are:
+
+- Reorganized static images:
+  - author images are now in `public/static/author`
+  - blog images are now in `public/static/images`
+  - blog post banner images are now in `public/static/banners`
+- Encouraged to use only the simple post layout
+- Blog page and index page are now rendered exactly the same
+- Mixed font from Header nav and footer vs everything else
+- Blog post banner images are now rendered in the blog page
+- Blog post banner images are SEO friendly
+- Cooler animations
+- Table of contents has an additional isOpen state
+
+Example blog post header:
+
+```md
+---
+title: 'Coding Week/Marketing Week'
+date: '2022-11-19'
+lastmod: '2022-11-19'
+tags: ['coding', 'marketing', 'guide', 'startup]
+authors: ['default']
+draft: false
+summary: 'Why do 50% code, 50% marketing as an early stage tech startup founder'
+layout: PostSimple
+images: ['code-vs-marketing.png']
+---
+```
+
+⚠️ Images is array but only the first image is used for the banner image
+
 ## Examples
 
 - [Demo Blog](https://tailwind-nextjs-starter-blog.vercel.app/) - this repo
